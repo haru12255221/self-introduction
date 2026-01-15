@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介動画ワークシート</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="worksheet">
+    <!-- ヘッダー -->
+    <header class="header">
+      <h1>自己紹介動画ワークシート</h1>
+      <p class="subtitle">迷ったときはこのシートを印刷し、空欄を埋めて台本を作ってみましょう!</p>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="content">
+      <form id="worksheet-form">
+        <!-- 撮影前セクション -->
+        <section class="section">
+          <p class="instruction">&lt;撮影前&gt;●● ●●(名前)です、自己紹介動画の撮影よろしくお願いします。</p>
+          <p class="arrow">↓</p>
+          <p class="note">(3秒後)　※ここから自己紹介スタート</p>
+          <p class="bold">一礼から始める</p>
+        </section>
+
+        <!-- 基本情報 -->
+        <section class="section basic-info">
+          <div class="input-row">
+            <label class="label">学校名：</label>
+            <input type="text" name="school" class="input-field" placeholder="">
+          </div>
+          <div class="input-row">
+            <label class="label">学部：</label>
+            <input type="text" name="faculty" class="input-field" placeholder="">
+          </div>
+          <div class="input-row">
+            <label class="label">学科：</label>
+            <input type="text" name="department" class="input-field" placeholder="">
+            <span class="suffix">出身です。</span>
+          </div>
+        </section>
+
+        <!-- 学業について -->
+        <section class="section">
+          <h2 class="section-title">★学業について★</h2>
+          <p class="orange-text">学生時代は、（以下例）</p>
+
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="study_type" value="research">
+                <span class="checkbox-text">①</span>
+              </label>
+              <input type="text" name="research_topic" class="input-field medium" placeholder="">
+              <span class="suffix">の研究をしていました。</span>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="study_type" value="seminar">
+                <span class="checkbox-text">②</span>
+              </label>
+              <input type="text" name="seminar_topic" class="input-field medium" placeholder="">
+              <span class="suffix">のゼミに所属していました。</span>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="study_type" value="class">
+                <span class="checkbox-text">③</span>
+              </label>
+              <input type="text" name="class_topic" class="input-field medium" placeholder="">
+              <span class="suffix">の授業に注力していました。</span>
+            </div>
+          </div>
+
+          <p class="orange-text detail-label">具体的には、（以下、学業の詳細、自分の役割、狙いや意図、課題や工夫、得たことなどを書く）</p>
+          <textarea name="study_detail" class="textarea" rows="4" placeholder=""></textarea>
+        </section>
+
+        <!-- 課外活動について -->
+        <section class="section">
+          <h2 class="section-title">★課外活動について★</h2>
+          <p class="orange-text">課外活動では、主に</p>
+
+          <div class="checkbox-group compact">
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="activity_type" value="parttime">
+                <span class="checkbox-text">①アルバイトに注力しました。</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="activity_type" value="hobby">
+                <span class="checkbox-text">②趣味に注力しました。</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="activity_type" value="club">
+                <span class="checkbox-text">③部活動/サークル活動に注力しました。</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="activity_type" value="volunteer">
+                <span class="checkbox-text">④ボランティア活動に注力しました。</span>
+              </label>
+            </div>
+          </div>
+          <p class="note small">（①～④の中から自由選択）</p>
+
+          <div class="inline-input">
+            <span class="orange-text">この経験で得た強みは</span>
+            <input type="text" name="strength1" class="input-field medium" placeholder="">
+            <span class="orange-text">だと考えております。</span>
+          </div>
+
+          <p class="orange-text detail-label">具体的には、（以下、強みの根拠となる経験などを書く）</p>
+          <textarea name="activity_detail" class="textarea" rows="4" placeholder=""></textarea>
+
+          <div class="inline-input">
+            <span class="orange-text">このことから、</span>
+            <input type="text" name="strength2" class="input-field short" placeholder="">
+            <span class="orange-text">（強み）を、身に着けることができました。</span>
+          </div>
+        </section>
+
+        <!-- 入社後について -->
+        <section class="section">
+          <h2 class="section-title">★入社後について★</h2>
+
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="future_type" value="experience">
+                <span class="checkbox-text">①この経験(or強み)を活かし</span>
+              </label>
+              <input type="text" name="future_goal1" class="input-field short" placeholder="">
+              <span class="suffix">のような社会人になりたいです。</span>
+            </div>
+            <div class="checkbox-item">
+              <label class="checkbox-label">
+                <input type="radio" name="future_type" value="ideal">
+                <span class="checkbox-text">②なりたい社会人像といたしましては</span>
+              </label>
+              <input type="text" name="future_goal2" class="input-field short" placeholder="">
+              <span class="suffix">を目指しています。</span>
+            </div>
+          </div>
+
+          <p class="orange-text detail-label">そのためにはまず、(以下、新入社員のうちにできる取り組み・努力について書く)</p>
+          <textarea name="future_effort" class="textarea" rows="3" placeholder=""></textarea>
+        </section>
+
+        <!-- 締め -->
+        <section class="section closing">
+          <p class="orange-text closing-text">どうぞ、よろしくお願いいたします。</p>
+          <p class="bold">一礼で終わり</p>
+        </section>
+
+        <!-- 共有ボタン -->
+        <section class="section share-section">
+          <button type="button" id="share-btn" class="share-btn">共有リンクを作成</button>
+          <div id="share-result" class="share-result" style="display: none;">
+            <input type="text" id="share-url" class="share-url" readonly>
+            <button type="button" id="copy-btn" class="copy-btn">コピー</button>
+          </div>
+          <p id="copy-message" class="copy-message" style="display: none;">コピーしました!</p>
+        </section>
+      </form>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
