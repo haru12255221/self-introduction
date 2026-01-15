@@ -17,7 +17,6 @@ body {
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-left: 6px solid #e53935;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -288,7 +287,6 @@ body {
   .worksheet {
     box-shadow: none;
     border: none;
-    border-left: 6px solid #e53935;
   }
 
   .input-field,
